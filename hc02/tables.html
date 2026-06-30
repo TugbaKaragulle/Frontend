@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <!-- tüm td'leri center'a yani ortaya almak icin text-align:center kullandik  -->
+<style>
+   td {
+        text-align:center;
+    }
+</style>
+
+</head>
+<body>
+
+    <h1>Tables</h1>
+    <hr>
+
+    <table border="1" style="width:50%"> 
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <td>Tugba</td>
+                <td rowspan ="4">Karagülle</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>Emre</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <td>Selin</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Kaan</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">Bos</td>
+                <!-- <td>Bos</td>
+                     <td>Bos</td>  -->
+            </tr>
+            
+        </tbody>
+    </table>
+    
+</body>
+</html>

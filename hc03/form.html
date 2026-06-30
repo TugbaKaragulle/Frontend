@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    table{
+        background-color: #e4e6d4;
+        margin: 0 auto;
+    }
+        .formTitle{
+            background-color: #b9b6b2;
+            color: #ebfc02;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <tr class="formTitle">
+            <td><img src="./avatar2.png" width="150" height="150" alt="avatar"></td>
+            <td align="center">PERSONAL FORM</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form action="result.html" method="get">
+                    <div>
+                    <label for="Username">Username:*</label>
+                    <input type="text" id="Username" name="username" placeholder="Enter your Username" required>
+                    </div><br>
+
+                    <div>
+                    <label for="email">Email:*</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                    </div><br>
+
+                    <div>
+                      <label for="password">Password:*</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                    </div><br>
+
+    <!-- ! Wir können auch ein Eingabefeld für die Telefonnummer hinzufügen, um die Telefonnummer des Benutzers zu erfassen. Hier ist ein Beispiel, wie Sie dies in Ihrem Formular implementieren können: -->
+
+                    <div>
+                        <label for="phone">Telefonnummer:</label>
+                        <input type="tel" id="phone" name="phone" pattern="^\+90[0-9]{10}$" placeholder="Enter your Phone Number">
+                    </div>
+                    <br>
+
+                    <!-- ! wir können auch ein Radio Button hinzufügen, um das Geschlecht auszuwählen. Hier ist ein Beispiel, wie Sie dies in Ihrem Formular implementieren können: -->
+
+                    <div>
+
+                        <label for="">Gender:*</label>
+                        
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </div> 
+                    <br>
+
+
+                    <!-- !Wir können auch ein checkbox hinzufügen, um die Tage auszuwählen, an denen der Benutzer verfügbar ist. Hier ist ein Beispiel, wie Sie dies in Ihrem Formular implementieren können: -->
+
+                    <div> 
+                        <label for="days">An welchen Tagen arbeiten Sie im Büro?</label>
+                        <br>
+                        <input type="checkbox" id="monday" name="days" value="monday">
+                        <label for="monday">Monday</label><br>
+                        <input type="checkbox" id="tuesday" name="days" value="tuesday">
+                        <label for="tuesday">Tuesday</label><br>  
+                        <input type="checkbox" id="wednesday" name="days" value="wednesday">
+                        <label for="wednesday">Wednesday</label><br>  
+                        <input type="checkbox" id="thursday" name="days" value="thursday">
+                        <label for="thursday">Thursday</label><br>  
+                        <input type="checkbox" id="friday" name="days" value="friday">
+                        <label for="friday">Friday</label>  
+                    </div>
+                    <br>
+
+                    <!-- ! Wir können auch ein Dropdown-Menü hinzufügen, um das Land auszuwählen. Hier ist ein Beispiel, wie Sie dies in Ihrem Formular implementieren können: -->
+
+<div> 
+    
+                    <label for="country">Country:*</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="Germany">Germany</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="France">France</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Türkiye">Türkiye</option>
+                    </select>
+            </div>
+            <br>
+
+            <!-- !Wir können auc ein fieldset hinzufügen, um die Interessen des Benutzers auszuwählen. Hier ist ein Beispiel, wie Sie dies in Ihrem Formular implementieren können:  -->
+
+            <fieldset>
+                <legend>Interests:</legend>
+                <input type="checkbox" id="sports" name="interests" value="sports" required>
+                <label for="sports">Sports</label><br>
+                <input type="checkbox" id="music" name="interests" value="music" required>
+                <label for="music">Music</label><br>
+                <input type="checkbox" id="travel" name="interests" value="travel" required>
+                <label for="travel">Travel</label><br>
+                <input type="checkbox" id="reading" name="interests" value="reading" required>
+                <label for="reading">Reading</label>
+                </fieldset><br>
+
+            <!-- ! Wir können auch ein Eingabefeld für das Geburtsdatum hinzufügen, um das Geburtsdatum des Benutzers zu erfassen. Hier ist ein Beispiel, wie Sie dies in Ihrem Formular implementieren können: -->
+
+            <div> 
+                <label for="birthdate">Geburtsdatum:*</label>
+                <input type="date" id="birthdate" name="birthdate" required> 
+            </div> <br>
+
+
+            <!-- !Wir können auch ein Eingabefeld für das Alter hinzufügen, um das Alter des Benutzers zu erfassen. Hier ist ein Beispiel, wie Sie dies in Ihrem Formular implementieren können: Wir können auch alter begrenzen -->
+
+            <div> 
+                <label for="age">Alter:*</label>
+                <input type="number" id="age" name="age" min="18" max="60" required>
+            </div>
+            <br>
+
+            <!-- !Wir können auch ein Eingabefeld für die Lieblingsfarbe hinzufügen, um die Lieblingsfarbe des Benutzers zu erfassen. Hier ist ein Beispiel, wie Sie dies in Ihrem Formular implementieren können: -->
+
+            <div> 
+                <label for="favoriteColor">Lieblingsfarbe:</label>
+                <input type="color" id="favoriteColor" name="favoriteColor"
+            </div>
+            <br><br>
+
+            <!-- ! Wir können auch unser Foto hochladen. Hier ist ein Beispiel, wie Sie dies in Ihrem Formular implementieren können: -->
+             <div>
+                
+                <label for="profilePicture">Profilbild hochladen:</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+             </div> <br>
+             
+
+                    <div>   
+                    <label for="message">Message:*</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"               placeholder="Enter your Message" required></textarea>
+                    </div><br>
+
+            
+
+                    <!-- ! Button ist moderner als input -->
+
+                    <div>
+                        <button type="submit" value="Submit">Save</button>
+                        <input type="reset" value="Clear the Form"></input>
+                     </div>
+                
+                </form>
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
+
+   
+    
+
+
